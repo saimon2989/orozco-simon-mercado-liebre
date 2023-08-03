@@ -1,0 +1,68 @@
+/* Adding generals styles */
+*{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	/* border: none;
+    outline: none; */ 
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    background-color: #EAC926;
+}
+.header-title{
+    padding: 35px 0px 0px 25px   
+}
+.header-title__image{
+    width: 150px;
+    padding-bottom: 10px;
+}
+.header-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 25px;
+    height: 43px;
+}
+.header-search__input{
+    width: 210px;
+    font-size: 0.9em;
+}
+.header-search__button{
+    width: 20px;
+    height: 20px;
+}
+
+.header-message{
+    display: flex;
+    padding: 15px 53px;
+}
+
+.header-navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+}
+.header-navbar__menu a, .header-navbar__user-menu a{
+    color: black;
+}
+.header-menu{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+.header-menu__icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #1259c3;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
