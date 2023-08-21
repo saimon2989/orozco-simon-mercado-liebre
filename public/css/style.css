@@ -1,7 +1,8 @@
 
 
-/* ● Navegación en tablets (ancho mínimo 361px)
-● Navegación en desktop (ancho mínimo 769px) */
+/* ● Navegación en mobile (ancho mínimo 360px)
+● Navegación en tablet (ancho mínimo 769px)
+● Navegación en desktop (ancho mínimo 1025px)*/
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -14,11 +15,11 @@ body{
 }
 .header-title__container{
     display: flex;
-    flex: column;
+    flex-direction: row;
+    padding: 20px 20px 0px 20px;   
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    padding: 25px 15px 0px 15px;   
+    justify-content: space-between;
 }
 
 .header-title__image{
@@ -30,20 +31,20 @@ body{
     align-items: center;
     background-color: white;
     border-radius: 5px 5px;
-    .header-search__input{
-        padding: 10px 5px 10px 10px;
-        font-size: 0.7em;
-        width: 124px;
-        height: 40px;
-        border-radius: 5px 0px 0px 5px;
-    }
-    .header-search__button{
-        width: 36px;
-        height: 40px;
-        background-color: white;
-        font-size: 16px;
-        border-radius: 0px 5px 5px 0px;
-    }
+}
+.header-search__input{
+    padding: 10px 5px 10px 10px;
+    font-size: 0.7em;
+    width: 124px;
+    height: 40px;
+    border-radius: 5px 0px 0px 5px;
+}
+.header-search__button{
+    width: 36px;
+    height: 40px;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 0px 5px 5px 0px;
 }
 
 .header-message{
@@ -52,6 +53,8 @@ body{
 }
 .header-message__p{
     font-size: 16px;
+    font-weight: 400;
+    text-align: center;
     white-space: nowrap;
 }
 
@@ -200,13 +203,12 @@ body{
 /* Responsive */
 
 /* Header resposive */
+
 @media (min-width: 425px) and (max-width: 769px) {
     .header-menu{
         display: none;
     }
-    
 }
-
 @media (min-width: 425px) /* and (max-width: 769px)  */{
         
     .header-title__image{
@@ -239,28 +241,13 @@ body{
     .header-img__banner{
         height: 160px;
     }
-    
 }
 @media (min-width: 1024px){
     .header-img__banner{
         height: 305px;
     }
 }
-/* @media (min-width: 769px){
-    .header-title__image{
-        width: 475px;
-        margin-right: 45px;
-    }
-    .header-navbar{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 50px;
-    }
-    .header-img__banner{
-        height: 305px;
-    }
-} */
+
 /* Main responsive */
 
 @media screen {
