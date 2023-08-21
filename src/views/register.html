@@ -69,21 +69,24 @@
                 <div class="form-container-type-profile">
 
                     <label class="form-label" for="perfil-usuario">Perfil del Usuario:</label>
-                    <input type="radio" id="comprar" name="perfil-usuario" value="Comprar" required>
+                    <input type="checkbox" id="comprar" name="perfil-usuario[]" value="Comprar" required>
                     <label class="form-label" for="comprar">Comprar</label>
-                    <input type="radio" id="vender" name="perfil-usuario" value="Vender" required>
+                    <input type="checkbox" id="vender" name="perfil-usuario[]" value="Vender" required>
                     <label for="vender">Vender</label>
                     <!-- <span class="error">Selecciona una opción</span> -->
                 </div>
                 <div class="form-container-select-interest">
                     <label class="form-label" for="categorias">Categorías de Interés:</label>
-                    <select class="form-select" id="categoria" name="categoria">
-                        <option value="electro">Electro</option>
-                        <option value="moda">Moda</option>
-                        <option value="hogar">Hogar</option>
-                        <option value="jugueteria">Juguetería</option>
-                        <option value="vida-sana">Vida Sana</option>
-                    </select>
+                    <input type="checkbox" id="Electro" name="categorias[]" required>
+                    <label class="form-label" for="Electro">Electro</label>
+                    <input type="checkbox" id="Moda" name="categorias[]"  required>
+                    <label class="form-label" for="Moda">Moda</label>
+                    <input type="checkbox" id="Hogar" name="categorias[]"  required>
+                    <label class="form-label" for="Moda">Hogar</label>
+                    <input type="checkbox" id="Juguetería" name="categorias[]"  required>
+                    <label class="form-label" for="Moda">Juguetería</label>
+                    <input type="checkbox" id="Vida Sana" name="categorias[]"  required>
+                    <label class="form-label" for="Moda">Vida Sana</label>
                 </div>
                 <div class="form-container-choose-img">
                     <label class="form-label" for="foto-usuario">Foto de Usuario:</label>

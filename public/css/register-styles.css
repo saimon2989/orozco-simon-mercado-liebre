@@ -150,6 +150,7 @@ body{
 }
 .form-container-select-interest{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -262,6 +263,9 @@ body{
     }
     .header-img__banner{
         height: 160px;
+    }
+    .form-container-select-interest{
+        flex-direction: row;
     }
 }
 @media (min-width: 1200px){
