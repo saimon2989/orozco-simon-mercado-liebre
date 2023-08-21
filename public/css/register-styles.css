@@ -77,11 +77,12 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    background-color: #03264C;
+    background-color:  #1259c3;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    cursor: pointer;
 }
 .header-img__banner{
     max-width: 100%;
@@ -95,6 +96,7 @@ body{
     display: block;
     margin: auto;
     background-color: #ebebeb;
+    padding: 20px 0px;
 }
 .main-section__form{
     margin: auto;
@@ -157,22 +159,29 @@ body{
 .form-submit-button{
     margin: 20px 0px 5px 0px;
     background-color: #03264C;
-    width: 100%;
+    width: 75%;
     height: 65px;
     color: #fff;
     font-size: 16px;
     font-weight: 700;
     border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.form-submit-button:hover{
+    background-color: #0022AA;
+
 }
 .form-restore-button{
     margin: 20px 0px 5px 0px;
     background-color: #666;
-    width: 100%;
+    width: 75%;
     height: 65px;
     color: #fff;
     font-size: 16px;
     font-weight: 700;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 /* Footer Styles */
@@ -191,17 +200,17 @@ body{
     text-align: center;
 }
 .footer-section > i{
-    color: #03264c;
+    color:  #1259c3;
     font-size: 40px;
 }
 
 .footer-section__title{
-    font-size: 20px;
+    font-size: 24px;
     color: #666;
     padding-top: 15px;
 }
 .footer-section__description{
-    font-size: 14px;
+    font-size: 12px;
     color: #666;
     text-align: center;
     
@@ -273,4 +282,11 @@ body{
     .footer-container{
         flex-direction: row;
     }
+    .footer-section__description{
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+        
+    }
+    
 }
