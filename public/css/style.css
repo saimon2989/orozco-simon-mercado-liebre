@@ -24,22 +24,26 @@ body{
 
 .header-title__image{
     width: 150px;
+    margin-right: 20px;
 }
 .header-search{
-    /* width: 605px; */
     display: flex;
+    flex: 1;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     border-radius: 5px 5px;
+    margin-right: 20px;
 }
 .header-search__input{
     padding: 10px 5px 10px 10px;
-    font-size: 0.7em;
+    flex: 1;
+    font-size: 14px;
     width: 124px;
     height: 40px;
     border-radius: 5px 0px 0px 5px;
+    color: #666;
 }
 .header-search__button{
     width: 36px;
@@ -47,6 +51,7 @@ body{
     background-color: white;
     font-size: 16px;
     border-radius: 0px 5px 5px 0px;
+    border-left: 1px solid #ebebeb;
 }
 
 .header-message{
@@ -62,8 +67,9 @@ body{
 .header-navbar{
     display: none;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 150px;
+    padding: 0px 20px;
 }
 
 .header-menu{
@@ -112,13 +118,14 @@ body{
 }
 .main-section__article{
     width: calc(25% - 20px);
-    border: solid 1px red;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 25px;
+    padding: 0px 15px 25px 15px;
     background-color: white;
     margin: 15px auto;
     box-sizing: border-box;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-in-out;
+}
+.main-section__article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 .main-section__article img{
@@ -142,6 +149,10 @@ body{
     align-self: flex-end;
     position: absolute;
     top: -10px;
+    transition: transform 0.3s ease;
+}
+.main-section__text-container i:hover{
+    transform: rotate(-90deg);
 }
 .main-section__text-container-row{
     display: flex;
@@ -159,15 +170,22 @@ body{
     color: #39b54a;
 }
 .main-section__text-container h3{
+    opacity: 0;
+    visibility: hidden;
     font-size: 16px;
     font-weight: 400;
     color: #666;
+    transition: opacity 0.5s ease-in-out ;
+}
+.main-section__article:hover .main-section__text-container h3{
+    opacity: 1;
+    visibility: visible;
 }
 
 
 
 /* Footer Styles */
-.footer{
+.footer-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -179,6 +197,7 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 40px 55px;
+    text-align: center;
 }
 .footer-section > i{
     color: #03264c;
@@ -208,8 +227,8 @@ body{
     }
     
     .header-title__image{
-        width: 135px;
-        margin-right: 25px;
+        width: 250px;
+        margin-right: 20px;
     }
     .header-message{
         max-width: 350px;
@@ -227,18 +246,19 @@ body{
         display: flex;
     }
     .header-navbar__menu a, .header-navbar__user-menu a{
-        color: #222222;
+        color: #000;
     }
     .header-navbar__menu li{
         font-size: 16px; 
-        margin: 0px 10px;
+        margin-left: 12px;
     }
     .header-navbar__user-menu li{         
-        margin: 0px 10px;
+        font-size: 16px; 
+        margin-left: 12px;
     }
     .header-navbar__user-menu i{
         font-size: 16px;         
-        margin-left: 10px;
+        margin-left: 5px;
     }
     .header-menu{
         display: none;
@@ -247,7 +267,8 @@ body{
         height: 160px;
     }
 }
-@media (min-width: 1024px){
+@media (min-width: 1200px){
+
     .header-img__banner{
         height: 305px;
     }
@@ -290,4 +311,11 @@ body{
         width: 100%;
     }
     
+}
+
+/* Footer Responsive */
+@media (min-width: 769px){
+    .footer-container{
+        flex-direction: row;
+    }
 }
