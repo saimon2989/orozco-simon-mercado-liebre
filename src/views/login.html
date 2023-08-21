@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/register-styles.css">
+    <title>Mercado Liebre Register</title>
     </head>
 <body>
     <!-- Header and Navbar -->
     <header class="header">
         <div class="header-title__container">
-                <a href="/"><img class="header-title__image" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>
+            <a href="/"><img class="header-title__image" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>
             <div class="header-search">
                 <input class="header-search__input" type="text" value="Buscar productos, marcas y más">
                 <button class="header-search__button">
@@ -48,55 +48,25 @@
         <img class="header-img__banner" src="/images/img-home-banner.jpg" alt="img-home-banner.jpg">
     </header>
     <main class="main">
-        <section class="main-section">
-            
-            <h2 class="main-section__title">Basado en tu última visita</h2>
-
-            <article class="main-section__article">
-                <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex">
-                <div class="main-section__text-container">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="main-section__text-container-row">
-                        <p class="main-section__text-container-p1">$6.770</p>
-                        <p class="main-section__text-container-p2">40% off</p>
-                    </div>
-                    <h3>Cafetera Moulimex</h3>                    
-                </div>
-            </article>
-            <article class="main-section__article">
-                <img src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019">
-                <div class="main-section__text-container">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="main-section__text-container-row">
-                        <p class="main-section__text-container-p1">$230.000</p>
-                    <p class="main-section__text-container-p2">20% off</p>
-                    </div>
-                    <h3>MacBook Pro 2019</h3>                    
-                </div>
-            </article>
-            <article class="main-section__article">
-                <img src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10">
-                <div class="main-section__text-container">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="main-section__text-container-row">
-                        <p class="main-section__text-container-p1">$70.500</p>
-                        <p class="main-section__text-container-p2">10% off</p>
-                    </div>
-                    <h3>Samsung Galaxy S10</h3>                    
-                </div>
-            </article>
-            <article class="main-section__article">
-                <img src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart">
-                <div class="main-section__text-container">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="main-section__text-container-row">
-                        <p class="main-section__text-container-p1">$23.200</p>
-                        <p class="main-section__text-container-p2">5% off</p>
-                    </div>
-                    <h3>SmartTv Samsung 43"</h3>                    
-                </div>
-            </article>
-            </section>
+        <h2 class="main-section-title__form">Registro de Usuario</h1>
+        <section class="main-section__form">
+            <form class="form" action="/submit" method="POST">
+                
+                <label class="form-label" for="nombre-usuario">Nombre de usuari@:</label>
+                <input class="form-input" type="text" id="nombre-usuario" name="nombre-usuario" value="Nombre de usuari@" required>
+                <!-- <span class="error">Este campo es requerido</span> -->
+                <label class="form-label" for="contrasena">Contraseña:</label>
+                <input class="form-input" type="password" id="contrasena" name="contrasena" value="Contraseña" required>
+                <!-- <span class="error">Este campo es requerido</span> -->
+                
+                <label class="form-label" for="confirmar-contrasena">Confirmar Contraseña:</label>
+                <input class="form-input" type="password" id="confirmar-contrasena" name="confirmar-contrasena" value="Confirmar Contraseña" required>
+                <!-- <span class="error">Este campo es requerido</span> -->
+                
+                <button class="form-submit-button" type="submit">Enviar</button>
+            </form>
+        </section>
+        
         </main>
         <footer class="footer">
             <div class="footer-container">
